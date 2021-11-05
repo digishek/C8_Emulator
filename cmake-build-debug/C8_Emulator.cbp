@@ -82,7 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/digishek/CLionProjects/C8 Emulator/chip8.hpp">
+			<Option target="C8_Emulator"/>
+		</Unit>
 		<Unit filename="/home/digishek/CLionProjects/C8 Emulator/main.cpp">
+			<Option target="C8_Emulator"/>
+		</Unit>
+		<Unit filename="/home/digishek/CLionProjects/C8 Emulator/platform.hpp">
 			<Option target="C8_Emulator"/>
 		</Unit>
 		<Unit filename="/home/digishek/CLionProjects/C8 Emulator/CMakeLists.txt">

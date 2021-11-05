@@ -3,4 +3,4 @@ project(C8_Emulator)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(C8_Emulator main.cpp)
+add_executable(C8_Emulator chip8.hpp platform.hpp main.cpp)
