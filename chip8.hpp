@@ -6,6 +6,7 @@
 #include <cstring>
 
 class Chip8{
+public:
     const unsigned int START_ADDRESS = 512 ;// start index is 0x200
     const unsigned int FONTSET_SIZE = 80 ,FONTSET_START_ADDRESS = 80  ; //  representaition of characters from 1-F will take 5 lines each of 8 bits
 
@@ -38,7 +39,7 @@ class Chip8{
     }
     void OP_NULL(){} ;
 
-public:
+
     Chip8() : randGen(std::chrono::system_clock::now().time_since_epoch().count()){
         programCounter = START_ADDRESS ;
 
@@ -113,7 +114,7 @@ public:
 
     }
 
-    void LoadRom(const char* filename){
+    void LoadROM(const char* filename){
         std::ifstream file(filename , std::ios::binary | std::ios::ate) ;
         if(file.is_open()){
             std::streampos size = file.tellg() ;
