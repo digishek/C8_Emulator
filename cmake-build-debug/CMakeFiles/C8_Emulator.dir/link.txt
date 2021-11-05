@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/C8_Emulator.dir/main.cpp.o -o C8_Emulator 
