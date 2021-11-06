@@ -20,9 +20,12 @@ The free and open-source Chip 8 emulator/debugger, written in C++ for Windows an
 
 ## Working 
 
-I have used implemented a simple Chip 8 interpreted using C++ , and am using STD2 for rendering the 64x32 pixels . 
+I have used implemented a simple Chip 8 interpreted using C++ , and am using STD2 for rendering the 64x32 pixels .
+
 The Chip8 class read's the instructions from .ch8 files, interpretes all the CPU commands , and executes them .
+
 The platform class displays the changes in the (64x32 display grid) .
+
 
 For a more detailed explanation please refer [![here](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM)](https://austinmorlan.com/posts/chip8_emulator/).
 
