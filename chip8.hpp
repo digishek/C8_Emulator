@@ -12,7 +12,7 @@ public:
 
     uint8_t registers[16] ,memory[4096]{} , stackPointer{} , delayTimer ,soundTimer ,keypad[16] ;
     uint16_t index , programCounter , stack[16] ,opcode ;
-    uint32_t video[64][32] ;
+    uint32_t video[64*32] ;
     std::default_random_engine randGen ;
     std::uniform_int_distribution<uint8_t> randByte ;
 
@@ -316,7 +316,7 @@ public:
             uint8_t spritebyte = memory[index+row] ;
             for(int col =0 ; col < 8; col++){
                     uint8_t spritePixel = spritebyte & (0x80u >> col) ;
-                    uint32_t* screenPixel = &video[ypos + row][xpos +col] ;
+                    uint32_t* screenPixel = &video[(ypos + row)*64 + xpos +col] ;
 
                     if(spritePixel){
                         if(*screenPixel == 0xFFFFFFFF){

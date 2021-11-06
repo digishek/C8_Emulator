@@ -1,3 +1,3 @@
 /home/digishek/CLionProjects/C8 Emulator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/digishek/CLionProjects/C8 Emulator/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/digishek/CLionProjects/C8 Emulator/cmake-build-debug/CMakeFiles/C8_Emulator.dir
+/home/digishek/CLionProjects/C8 Emulator/cmake-build-debug/CMakeFiles/chip8.dir

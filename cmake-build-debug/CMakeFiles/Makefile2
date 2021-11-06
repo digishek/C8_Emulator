@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = "/home/digishek/CLionProjects/C8 Emulator/cmake-build-debug"
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/C8_Emulator.dir/all
+all: CMakeFiles/chip8.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/C8_Emulator.dir/clean
+clean: CMakeFiles/chip8.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/C8_Emulator.dir
+# Target rules for target CMakeFiles/chip8.dir
 
 # All Build rule for target.
-CMakeFiles/C8_Emulator.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C8_Emulator.dir/build.make CMakeFiles/C8_Emulator.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C8_Emulator.dir/build.make CMakeFiles/C8_Emulator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/digishek/CLionProjects/C8 Emulator/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target C8_Emulator"
-.PHONY : CMakeFiles/C8_Emulator.dir/all
+CMakeFiles/chip8.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chip8.dir/build.make CMakeFiles/chip8.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chip8.dir/build.make CMakeFiles/chip8.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/digishek/CLionProjects/C8 Emulator/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target chip8"
+.PHONY : CMakeFiles/chip8.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/C8_Emulator.dir/rule: cmake_check_build_system
+CMakeFiles/chip8.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/digishek/CLionProjects/C8 Emulator/cmake-build-debug/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/C8_Emulator.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/chip8.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/digishek/CLionProjects/C8 Emulator/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/C8_Emulator.dir/rule
+.PHONY : CMakeFiles/chip8.dir/rule
 
 # Convenience name for target.
-C8_Emulator: CMakeFiles/C8_Emulator.dir/rule
-.PHONY : C8_Emulator
+chip8: CMakeFiles/chip8.dir/rule
+.PHONY : chip8
 
 # clean rule for target.
-CMakeFiles/C8_Emulator.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C8_Emulator.dir/build.make CMakeFiles/C8_Emulator.dir/clean
-.PHONY : CMakeFiles/C8_Emulator.dir/clean
+CMakeFiles/chip8.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chip8.dir/build.make CMakeFiles/chip8.dir/clean
+.PHONY : CMakeFiles/chip8.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

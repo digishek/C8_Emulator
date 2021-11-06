@@ -46,5 +46,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/C8_Emulator.dir/DependInfo.cmake"
+  "CMakeFiles/chip8.dir/DependInfo.cmake"
   )

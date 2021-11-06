@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named C8_Emulator
+# Target rules for targets named chip8
 
 # Build rule for target.
-C8_Emulator: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 C8_Emulator
-.PHONY : C8_Emulator
+chip8: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chip8
+.PHONY : chip8
 
 # fast build rule for target.
-C8_Emulator/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C8_Emulator.dir/build.make CMakeFiles/C8_Emulator.dir/build
-.PHONY : C8_Emulator/fast
+chip8/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chip8.dir/build.make CMakeFiles/chip8.dir/build
+.PHONY : chip8/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C8_Emulator.dir/build.make CMakeFiles/C8_Emulator.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chip8.dir/build.make CMakeFiles/chip8.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C8_Emulator.dir/build.make CMakeFiles/C8_Emulator.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chip8.dir/build.make CMakeFiles/chip8.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C8_Emulator.dir/build.make CMakeFiles/C8_Emulator.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chip8.dir/build.make CMakeFiles/chip8.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... C8_Emulator"
+	@echo "... chip8"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

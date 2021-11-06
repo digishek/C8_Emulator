@@ -6,8 +6,12 @@ const int VIDEO_WIDTH = 64  ,VIDEO_HEIGHT = 32 ;
 
 int main(int argc, char** argv)
 {
+    for(int i= 0 ;i<argc ;i++ ){
+        std::cerr<<argv[i]<<" " ;
+    }
     if (argc != 4)
     {
+
         std::cerr << "Usage: " << argv[0] << " <Scale> <Delay> <ROM>\n";
         std::exit(EXIT_FAILURE);
     }
