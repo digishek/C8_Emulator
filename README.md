@@ -55,7 +55,7 @@ The main files expects some arguments in the following format :
 
 Scale - Multiplier for display scaling since 64x32 is too small for modern devices (10-20 recommended) 
 
-Delay - Delay for inbuilt timers . This values depends on the game(1-10 Recommended) 
+Delay - Wait a specified number of milliseconds before returning. . This values depends on the game(1-10 Recommended) 
 
 Filename - Name of the .ch8 file you want to run .
 
