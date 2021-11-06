@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -g -Wall -std=gnu++11
+CXX_FLAGS = -g -Wall -std=gnu++17
 

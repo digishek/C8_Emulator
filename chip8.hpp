@@ -37,16 +37,20 @@ uint8_t fontset[FONTSET_SIZE] =
 
 class Chip8{
 public:
-    uint8_t registers[16]{} ,memory[4096]{} , stackPointer{} , delayTimer{} ,soundTimer{} ,keypad[16]  ;
-    uint16_t index{} , programCounter{} , stack[16]{} ,opcode{} ;
-    uint32_t video[VIDEO_WIDTH*VIDEO_HEIGHT]{} ;
-    std::default_random_engine randGen ;
-    std::uniform_int_distribution<uint8_t> randByte ;
-    uint16_t &pc ;
-    uint8_t &sp ;
+    uint8_t memory[MEMORY_SIZE]{};
+    uint8_t registers[REGISTER_COUNT]{};
+    uint16_t index{};
+    uint16_t pc{};
+    uint8_t delayTimer{};
+    uint8_t soundTimer{};
+    uint16_t stack[STACK_LEVELS]{};
+    uint8_t sp{};
+    uint16_t opcode{};
+    uint8_t keypad[KEY_COUNT]{};
+    uint32_t video[VIDEO_WIDTH * VIDEO_HEIGHT]{};
 
-
-
+    std::default_random_engine randGen;
+    std::uniform_int_distribution<uint8_t> randByte;
 
     typedef void (Chip8::*Chip8Func)();
     Chip8Func table[0xF + 1]{&Chip8::OP_NULL};
@@ -54,25 +58,33 @@ public:
     Chip8Func table8[0xE + 1]{&Chip8::OP_NULL};
     Chip8Func tableE[0xE + 1]{&Chip8::OP_NULL};
     Chip8Func tableF[0x65 + 1]{&Chip8::OP_NULL};
-    void Table0(){
+
+    void Table0()
+    {
         ((*this).*(table0[opcode & 0x000Fu]))();
     }
 
-    void Table8(){
+    void Table8()
+    {
         ((*this).*(table8[opcode & 0x000Fu]))();
     }
 
-    void TableE(){
+    void TableE()
+    {
         ((*this).*(tableE[opcode & 0x000Fu]))();
     }
 
-    void TableF(){
+    void TableF()
+    {
         ((*this).*(tableF[opcode & 0x00FFu]))();
     }
-    void OP_NULL(){} ;
+
+    void OP_NULL()
+    {}
 
 
-    Chip8() : randGen(std::chrono::system_clock::now().time_since_epoch().count()) , pc(programCounter) , sp(stackPointer){
+
+    Chip8() : randGen(std::chrono::system_clock::now().time_since_epoch().count()){
         // Initialize PC
         pc = START_ADDRESS;
 
@@ -370,10 +382,12 @@ public:
 
     void OP_Dxyn()
     {
-        uint8_t Vx = (opcode & 0x0F00u) >> 8u;
-        uint8_t Vy = (opcode & 0x00F0u) >> 4u;
-        uint8_t height = opcode & 0x000Fu;
+        std::cerr<<"draw "<<std::hex<<opcode<<"\n1111" ;
 
+        uint8_t Vx = ((opcode & 0x0F00u) >> 8u);
+        uint8_t Vy = ((opcode & 0x00F0u) >> 4u);
+        uint8_t height = opcode & 0x000Fu;
+        std::cerr<<Vx<<" "<<Vy<<"\n" ;
         // Wrap if going beyond screen boundaries
         uint8_t xPos = registers[Vx] % VIDEO_WIDTH;
         uint8_t yPos = registers[Vy] % VIDEO_HEIGHT;
@@ -580,7 +594,7 @@ public:
     {
         // Fetch
         opcode = (memory[pc] << 8u) | memory[pc + 1];
-        std::cerr<<std::hex<<opcode<<"\n" ;
+
         // Increment the PC before we execute anything
         pc += 2;
 
