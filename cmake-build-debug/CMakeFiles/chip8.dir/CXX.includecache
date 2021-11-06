@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/digishek/CLionProjects/C8 Emulator/chip8.hpp
+cstdint
+-
+fstream
+-
+iostream
+-
+chrono
+-
+random
+-
+cstring
+-
+
+/home/digishek/CLionProjects/C8 Emulator/main.cpp
+chrono
+-
+iostream
+-
+chip8.hpp
+/home/digishek/CLionProjects/C8 Emulator/chip8.hpp
+platform.hpp
+/home/digishek/CLionProjects/C8 Emulator/platform.hpp
+
+/home/digishek/CLionProjects/C8 Emulator/platform.hpp
+cstdint
+-
+SDL2/SDL.h
+-
+

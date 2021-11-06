@@ -2,7 +2,7 @@
 #include <iostream>
 #include "chip8.hpp"
 #include "platform.hpp"
-const int VIDEO_WIDTH = 64  ,VIDEO_HEIGHT = 32 ;
+
 
 int main(int argc, char** argv)
 {
