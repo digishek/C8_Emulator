@@ -1,6 +1,6 @@
 C8_Emulator                                                                                                                                                                                                      
 ===========                                                                                                                                                                                        
-[![System Structure Reference](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM)](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM)
+[![System Structure Reference]](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM)
 
 	      #@@@@@@@@@@@.                                  @@@@@@@@@@@@@@@@,                                          @@@@@%                  @@@@@#                                          
 	    @@@@@@@@@@@@@@.    @@@@@@@@@                     @@@@@@@@@@@@@@@@,                                          @@@@@%                  @@@@@#                                          
@@ -27,7 +27,7 @@ The Chip8 class read's the instructions from .ch8 files, interpretes all the CPU
 The platform class displays the changes in the (64x32 display grid) .
 
 
-For a more detailed explanation please refer [![here](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM)](https://austinmorlan.com/posts/chip8_emulator/).
+For a more detailed explanation please refer [![here]](https://austinmorlan.com/posts/chip8_emulator/).
 
 I have tested tetris and space invaders , both are playable. 
 
@@ -60,7 +60,7 @@ Delay - Delay for inbuilt timers . This values depends on the game(1-10 Recommen
 Filename - Name of the .ch8 file you want to run .
 
 
-You can check out some games [![here](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM)](https://github.com/JohnEarnest/chip8Archive/tree/master/roms).
+You can check out some games [![here]](https://github.com/JohnEarnest/chip8Archive/tree/master/roms).
 
 
 
