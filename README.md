@@ -28,10 +28,15 @@ For a more detailed explanation please refer [![here](http://devernay.free.fr/ha
 
 I have tested tetris and space invaders , both are playable. 
 
+
+
+![tetris](https://user-images.githubusercontent.com/45209646/140600492-ded30cca-deed-47ec-a0d7-ea4bee6de079.gif)
+
+
+
 ![space_invaders](https://user-images.githubusercontent.com/45209646/140600171-dfaccd47-bb78-4154-8834-38b6d84600ab.gif)
 
 
-![tetris](https://user-images.githubusercontent.com/45209646/140600174-9eef545a-3214-4213-9267-b4188e87793d.gif)
 
 
 
